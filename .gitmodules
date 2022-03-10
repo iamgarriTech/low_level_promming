@@ -1,0 +1,3 @@
+[submodule "0x00-hello_world/alx-low_level_programming"]
+	path = 0x00-hello_world/alx-low_level_programming
+	url = https://github.com/King-Mide-1/alx-low_level_programming.git
