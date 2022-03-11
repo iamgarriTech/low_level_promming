@@ -15,35 +15,35 @@ int main(void)
 	/* your code goes there */
 	while (f < 10)
 	{
-		e = 0;
-		while (e < 10)
+	e = 0;
+	while (e < 10)
+	{
+		d = 0;
+		while (d < 10)
 		{
-			d = 0;
-			while (d < 10)
+			c = 0;
+			while (c < 10)
 			{
-				c = 0;
-				while (c < 10)
+				if (!(f == c && e == d))
 				{
-					if (!(f == c && e == d))
+					putchar('0' + f);
+					putchar('0' + e);
+					putchar(' ');
+					putchar('0' + d);
+					putchar('0' + c);
+					if (!(f + e == 18 && c + d == 17 && d == 9))
 					{
-						putchar('0' + f);
-						putchar('0' + e);
-						putchar(' ');
-						putchar('0' + d);
-						putchar('0' + c);
-						if (!(f + e == 18 && c + d == 17 && d == 9))
-						{
-						putchar(',');
-						putchar(' ');
-						}
+					putchar(',');
+					putchar(' ');
 					}
-					c++;
 				}
-				d++;
+				c++;
 			}
-			e++;
+			d++;
 		}
-		f++;
+		e++;
+	}
+	f++;
 	}
 	putchar('\n');
 	return (0);
