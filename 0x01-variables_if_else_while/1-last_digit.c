@@ -16,7 +16,7 @@ int main(void)
 	n = 98;
 	if (n > 5)
 		printf("Last digit of %d is 8 and is greater than 5\n", n);
-	if (n == -98)
+	else if (n == -8)
 		printf("Last digit of %d is -8 and is less than 6 and not 0\n", n);
 	if ((n < 6) != 0)
 		printf("Last digit of %d is less than 6 and not 0\n", n);
