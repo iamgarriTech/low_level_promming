@@ -8,12 +8,12 @@
  */
 int main(void)
 {
-	int n;
+	int n = 98;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n > 6)
+	if (n > 5)
 		printf("%d and is greater than 5\n", n);
 	if (n == 0)
 		printf("%d and is 0\n", n);
