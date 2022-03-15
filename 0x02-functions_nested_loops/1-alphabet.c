@@ -4,7 +4,7 @@
  * print_alphabet - Entry point
  * Return:0
  */
-void print_alphabet(void)
+int main()
 {
 	char c = 'a';
 	while (c <= 'z')
