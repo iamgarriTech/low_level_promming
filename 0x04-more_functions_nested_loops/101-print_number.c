@@ -4,8 +4,10 @@
  * @n: number to be printed
  * Return:void
  */
+
 void print_number(int n)
 {
+
 	int d = 1, i = 0, ii = 0;
 
 	if (n < 0)
@@ -13,12 +15,14 @@ void print_number(int n)
 		_putchar('-');
 		n = -n;
 	}
+
 	while (n / d != 0)
 	{
 		d *= 10;
 		i++;
 	}
 	d = d / 10;
+
 	while (ii < i)
 	{
 		_putchar('0' + n / d);
