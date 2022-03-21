@@ -1,11 +1,13 @@
 #include "main.h"
 /**
- * 1-swap.c - swap arguements between a and b
- * @n: pointer
+ * swap_int - swap variable values
+ * @a: pointer 1
+ * @b: pointer 2
  * Return: void
  */
 void swap_int(int *a, int *b)
 {
-	*a = 42;
-	*b = 98;
+	*a += *b;
+	*b = *a - *b;
+	*a = *a - *b;
 }
